@@ -520,21 +520,20 @@ export default function Index() {
                   </div>
                   <p className="text-[#0d7fa8]/60 text-xs">Наши магазины</p>
                 </div>
-                <div className="space-y-2 pl-1">
-                  <div className="flex items-start gap-2">
-                    <span className="text-[#12cf91] font-bold text-sm mt-0.5">1</span>
-                    <div>
-                      <p className="text-[#0a4a6e] font-bold text-sm">ул. Горького, д. 103</p>
-                      <p className="text-[#0d7fa8]/60 text-xs">Пн–Вс 8:00–21:00</p>
+                <div className="space-y-3 pl-1">
+                  {[
+                    { num: "1", addr: "ул. Горького, д. 103" },
+                    { num: "2", addr: "Пошехонское шоссе, 14А" },
+                  ].map(s => (
+                    <div key={s.num} className="flex items-start gap-2">
+                      <span className="text-[#12cf91] font-bold text-sm mt-0.5">{s.num}</span>
+                      <div>
+                        <p className="text-[#0a4a6e] font-bold text-sm">{s.addr}</p>
+                        <p className="text-[#0d7fa8]/60 text-xs">Пн–Пт 10:00–21:00</p>
+                        <p className="text-[#0d7fa8]/60 text-xs">Сб 10:00–20:00 · Вс 10:00–19:00</p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-[#12cf91] font-bold text-sm mt-0.5">2</span>
-                    <div>
-                      <p className="text-[#0a4a6e] font-bold text-sm">Пошехонское шоссе, 14А</p>
-                      <p className="text-[#0d7fa8]/60 text-xs">Пн–Вс 8:00–21:00</p>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
 
