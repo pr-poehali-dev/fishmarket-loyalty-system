@@ -499,7 +499,6 @@ export default function Index() {
               {[
                 { icon: "Phone", title: "Телефон", value: "+7 (800) 555-35-35", sub: "Звонок бесплатный" },
                 { icon: "Mail", title: "Email", value: "hello@akvamarket.ru", sub: "Ответим в течение часа" },
-                { icon: "MapPin", title: "Адрес", value: "ул. Морская, 1, офис 301", sub: "Пн–Пт 9:00–18:00" },
                 { icon: "MessageCircle", title: "Мессенджеры", value: "WhatsApp, Telegram", sub: "Быстрее всего здесь" },
               ].map(c => (
                 <div key={c.icon} className="bg-white rounded-2xl p-5 flex items-center gap-4 shadow-sm border border-[#22c5e8]/20">
@@ -513,6 +512,31 @@ export default function Index() {
                   </div>
                 </div>
               ))}
+
+              <div className="bg-white rounded-2xl p-5 shadow-sm border border-[#22c5e8]/20">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-12 h-12 rounded-xl ocean-gradient flex items-center justify-center shrink-0">
+                    <Icon name="MapPin" size={20} className="text-white" />
+                  </div>
+                  <p className="text-[#0d7fa8]/60 text-xs">Наши магазины</p>
+                </div>
+                <div className="space-y-2 pl-1">
+                  <div className="flex items-start gap-2">
+                    <span className="text-[#12cf91] font-bold text-sm mt-0.5">1</span>
+                    <div>
+                      <p className="text-[#0a4a6e] font-bold text-sm">ул. Горького, д. 103</p>
+                      <p className="text-[#0d7fa8]/60 text-xs">Пн–Вс 8:00–21:00</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-[#12cf91] font-bold text-sm mt-0.5">2</span>
+                    <div>
+                      <p className="text-[#0a4a6e] font-bold text-sm">Пошехонское шоссе, 14А</p>
+                      <p className="text-[#0d7fa8]/60 text-xs">Пн–Вс 8:00–21:00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
               <div className="bg-gradient-to-r from-[#0a4a6e] to-[#10a876] rounded-2xl p-6 text-white">
                 <div className="flex items-center gap-3 mb-2">
