@@ -74,7 +74,7 @@ export default function Index() {
             <button onClick={() => scrollTo("home")} className="flex items-center gap-2">
               <span className="text-2xl animate-float">🌊</span>
               <span className="font-['Oswald'] text-xl font-bold text-white tracking-wider">
-                АКВА<span className="text-[#12cf91]">МАРКЕТ</span>
+                РЫБОВЫЕ <span className="text-[#12cf91]">ВОЛОГДА</span>
               </span>
             </button>
 
@@ -378,9 +378,9 @@ export default function Index() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <Badge className="bg-[#0d7fa8]/15 text-[#0d7fa8] border-[#0d7fa8]/30 mb-4">О компании</Badge>
-              <h2 className="text-4xl md:text-5xl font-bold text-[#0a4a6e] mb-6">МЫ — АКВА&shy;МАРКЕТ</h2>
+              <h2 className="text-4xl md:text-5xl font-bold text-[#0a4a6e] mb-6">РЫБОВЫЕ МАГАЗИНЫ ВОЛОГДА</h2>
               <p className="text-[#0d7fa8]/80 text-lg leading-relaxed mb-6">
-                Уже 10 лет мы доставляем свежайшие морепродукты прямо с рыбных хозяйств и портовых рынков. Никаких посредников — только качество.
+                Уже 10 лет мы доставляем свежайшую рыбу и морепродукты жителям Вологды — прямо с рыбных хозяйств. Никаких посредников, только качество.
               </p>
               <div className="space-y-4 mb-8">
                 {[
@@ -517,7 +517,7 @@ export default function Index() {
               <div className="bg-gradient-to-r from-[#0a4a6e] to-[#10a876] rounded-2xl p-6 text-white">
                 <div className="flex items-center gap-3 mb-2">
                   <span className="text-2xl">🌊</span>
-                  <h4 className="font-bold text-lg">АкваМаркет</h4>
+                  <h4 className="font-bold text-lg">Рыбовые магазины Вологда</h4>
                 </div>
                 <p className="text-white/70 text-sm">Следите за нами в соцсетях — публикуем акции, новые поставки и рецепты.</p>
                 <div className="flex gap-3 mt-4">
@@ -540,7 +540,7 @@ export default function Index() {
             <div className="flex items-center gap-2">
               <span className="text-xl">🌊</span>
               <span className="font-['Oswald'] text-lg font-bold text-white tracking-wider">
-                АКВА<span className="text-[#12cf91]">МАРКЕТ</span>
+                РЫБОВЫЕ <span className="text-[#12cf91]">ВОЛОГДА</span>
               </span>
             </div>
             <div className="flex flex-wrap gap-4 justify-center">
@@ -554,7 +554,7 @@ export default function Index() {
                 </button>
               ))}
             </div>
-            <p className="text-white/40 text-sm">© 2024 АкваМаркет</p>
+            <p className="text-white/40 text-sm">© 2024 Рыбовые магазины Вологда</p>
           </div>
         </div>
       </footer>
